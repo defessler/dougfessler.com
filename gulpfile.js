@@ -7,6 +7,7 @@ var uglify      = require('gulp-uglify');
 var sourcemaps  = require('gulp-sourcemaps');
 var clean       = require('gulp-clean');
 var runSequence = require('run-sequence');
+var connect     = require('gulp-connect');
 
 var srcs = {
   less: ['./src/css/app.less'],
@@ -53,9 +54,16 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest(dests.js));
 });
 
-gulp.task('compile', ['move:clean', 'less', 'scripts'])
+gulp.task('compile', ['move:clean', 'less', 'scripts']);
+
+gulp.task('webserver', function() {
+  connect.server({
+    root: "./public"
+  });
+});
 
 gulp.task('watch', ['compile'], function () {
   gulp.watch('./src/css/*.less', ['less']);
   gulp.watch(['./src/img/*', './src/fonts/*', './src/*.html'],  ['move']);
+  runSequence('webserver')
 });
