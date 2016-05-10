@@ -1,0 +1,19 @@
+{
+  "name": "dougfessler.com",
+  "version": "1.0.0",
+  "authors": [
+    "Doug Fessler <defessler@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist/vendors"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6",
+    "backbone": "^1.3.3"
+  }
+}
