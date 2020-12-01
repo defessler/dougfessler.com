@@ -70,7 +70,7 @@
         padding: 0 0 0 23px;
       }
       .job-summary strong {
-        font-size: 14px;
+        font-size: 15px;
         margin-bottom: 2px;
         display: inline-block;
       }
@@ -90,8 +90,7 @@
         //border: 1px solid #ddd;
         //width: 614px;
       }
-
-       #resume .project-list ul{
+      #resume .project-list ul{
         padding-left: 25px;
         padding-top: 2px;
       }
@@ -105,15 +104,25 @@
       .project-list > li:last-child {
         margin-bottom: 0px
       }
-
-     
+      #resume ul.sub-team-list{
+        padding-left: 2px;
+      }
+      .sub-team-list > li{
+        list-style: none;
+        margin-top: 2px;
+      }
+      .sub-team-list .team-title {
+        color: #444;
+        display: block;
+        font-weight: bold;
+      }
     </style>
 </head>
 <body>
   <div id="resume">
     <h1 class="name">
         <span class="first-name">Doug</span> <span class="last-name">Fessler</span> 
-        <span class="headline">Software Engineer at FireForge</span>
+        <span class="headline">Software Engineer</span>
     </h1>
     <div class="section contact">
         <h2 class="section-header">
@@ -121,7 +130,7 @@
         </h2>
         <div class="content">
             <div class="main-address">
-                <span class="label">Address:</span> <span class="content">163 N Marengo Ave. Apt 205, Pasadena, CA 91101</span>
+                <span class="label">Address:</span> <span class="content">4140 Spectrum, Irvine, CA 92618</span>
             </div>
             <div class="email-address">
                 <span class="label">Email:</span> <span class="content"><a href="mailto:defessler@gmail.com">defessler@gmail.com</a></span>
@@ -150,18 +159,16 @@
         </h2>
         <div class="content">
             <ul class="categories">
-                <li>Frameworks / Engines: </li>
+                <li>Engines: </li>
                 <li>Languages: </li>
                 <li>Software: </li>
                 <li>Version Control: </li>
-                <li>Misc.: </li>
             </ul>
             <ul class="category-content">
-                <li>Unreal Engine, Unity, Coherent UI, Node.js</li>
-                <li>C/C++, C#, JavaScript, HTML/CSS, ActionScript, PHP, MySQL</li>
-                <li>Visual Studio, MonoDevelop, Sublime Text, Eclipse, Adobe Photoshop</li>
+                <li>Unreal Engine, Unity</li>
+                <li>C/C++, C#, Lua, JavaScript, HTML/CSS, MySQL</li>
+                <li>Visual Studio, Sublime Text, Eclipse, Adobe Photoshop</li>
                 <li>Git, Perforce, SVN, CVS</li>
-                <li>UI/UX, AJAX, Graphic Design, AI, REST, Automation Tools</li>
             </ul>
         </div>
         <div class="clear"></div>
@@ -173,10 +180,47 @@
         <div class="content">
             <div class="position first">
                 <div class="company-name">
+                    Blizzard<br /> Entertainment
+                </div>
+                <div class="dates">
+                    <span class="start-month">09 /</span> <span class="start-year">2018</span> <span class="date-separator">-</span> <span class="is-current">Present</span>
+                </div>
+                <div class="title">
+                    Software Engineer
+                </div>
+                <div class="job-summary">
+                    <ul class="project-list">
+                        <li>
+                            <strong>Hearthstone (PC/Mac/iOS/Android) [Unity]</strong> <i>Online Multiplayer</i><br />
+                            <ul class="sub-team-list">
+                                <li>
+                                    <span class="team-title">Features Team</span>
+                                    <ul>
+                                        <li>Refactored hero picker to allow for implementing heroes through data.</li>
+                                        <li>Implemented design for The Dalaran Heist and Tombs of Terror solo adventures.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="team-title">Framework Team</span>
+                                    <ul>
+                                        <li>Took ownership over UI Framework built in Unity using C# making it easier to build 3D perspective UI.</li>
+                                        <li>Optimized UI Framework to scope data version changes to only update relevant components.</li>
+                                        <li>Designed and implemented new features for UI Framework (List, Icon Library, and Camera Masking components).</li>
+                                        <li>Helped to implement Lua scripting framework on the server using C++.</li>
+                                        <li>Provide guidance around Lua and UI Frameworks to designers and engineers across the team.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="position first">
+                <div class="company-name">
                     WhiteMoon<br /> Dreams
                 </div>
                 <div class="dates">
-                    <span class="start-month">09 /</span> <span class="start-year">2016</span> <span class="date-separator">-</span> <span class="is-current">Present</span>
+                    <span class="start-month">09 /</span> <span class="start-year">2016</span> <span class="date-separator">-</span> <span class="end-month">09 /</span> <span class="end-year">2018</span>
                 </div>
                 <div class="title">
                     Gameplay Programmer
@@ -198,12 +242,77 @@
                                 <li>Set up framework for sending match configurations to match making service and refactored existing team system to support data from match making service.</li>
                                 <li>Implemented single player (Burn Circuit) and cooperative (Invaders Wave Defense) game modes. Optimized wave defense game mode by implementing a pool manager.</li>
                                 <li>Improved custom AI navigation generation, added difficulty levels, improved basic AI combat, and added AI for capture the flag (Gridiron) game mode.</li>
-                                <li>Refactored parts of the UI framework to make it easier to create and update menus.</li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="section educations">
+        <h2 class="section-header">
+            <span class="text">Education</span>
+        </h2>
+        <div class="content">
+            <div class="education first">
+                <div class="school-name">
+                    Owens Community College
+                </div>
+                <div class="dates">
+                    <span class="start-year">2006</span> <span class="date-separator">-</span> <span class="end-year">2010</span>
+                </div>
+                <div class="program">
+                    <span class="degree">Associates of Applied Science</span><span class="program-separator">,</span> <span class="field-of-study">Computer Science</span>
+                    <div class="additional">
+                        <small><strong>Additional: </strong>
+                        Computer Systems Certificate</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="section interests">
+        <h2 class="section-header">
+            <span class="text">Interests</span>
+        </h2>
+        <div class="content">
+            <p>
+                Software Engineering, Game Development, Web Development, Gaming, and Computer Hardware.
+            </p>
+            <p class="favorite-games">
+                <strong>Favorite Games: </strong>
+                Super Smash Bros., Metal Gear Solid, Final Fantasy, Dark Souls, Heathstone, World of Warcraft, Overwatch
+            </p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="section certifications">
+        <h2 class="section-header">
+            <span class="text">Certifications</span>
+        </h2>
+        <div class="content">
+            <div class="certification first">
+                <div class="certification-name">
+                    Computer Systems Certificate
+                </div>
+                <div class="dates">
+                    <span class="start-month">05 /</span> <span class="start-year">2010</span>
+                </div>
+                <div class="certificate-details">
+                    <span class="authority">Owens Community College</span>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <br />
+    <div class="section positions">
+        <h2 class="section-header">
+            <span class="text">Additional Experience</span>
+        </h2>
+        <div class="content">
             <div class="position first">
                 <div class="company-name">
                     Dark Rift Entertainment
@@ -289,63 +398,6 @@
                         <li>Full stack development and maintenance on all company websites.</li>
                         <li>Maintain company LAN, servers, and other computer systems support.</li>
                     </ul>
-                </div>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="section educations">
-        <h2 class="section-header">
-            <span class="text">Education</span>
-        </h2>
-        <div class="content">
-            <div class="education first">
-                <div class="school-name">
-                    Owens Community College
-                </div>
-                <div class="dates">
-                    <span class="start-year">2006</span> <span class="date-separator">-</span> <span class="end-year">2010</span>
-                </div>
-                <div class="program">
-                    <span class="degree">Associates of Applied Science</span><span class="program-separator">,</span> <span class="field-of-study">Computer Science</span>
-                    <div class="additional">
-                        <small><strong>Additional: </strong>
-                        Computer Systems Certificate</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="section interests">
-        <h2 class="section-header">
-            <span class="text">Interests</span>
-        </h2>
-        <div class="content">
-            <p>
-                Software Engineering, Game Development, Web Development, Gaming, and Computer Hardware.
-            </p>
-            <p class="favorite-games">
-                <strong>Favorite Games: </strong>
-                Super Smash Bros., Metal Gear Solid, Final Fantasy, Dark Souls, Heathstone, Starcraft II, Heroes of the Storm, Overwatch
-            </p>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="section certifications">
-        <h2 class="section-header">
-            <span class="text">Certifications</span>
-        </h2>
-        <div class="content">
-            <div class="certification first">
-                <div class="certification-name">
-                    Computer Systems Certificate
-                </div>
-                <div class="dates">
-                    <span class="start-month">05 /</span> <span class="start-year">2010</span>
-                </div>
-                <div class="certificate-details">
-                    <span class="authority">Owens Community College</span>
                 </div>
             </div>
         </div>
